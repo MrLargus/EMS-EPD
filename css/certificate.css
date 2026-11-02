@@ -155,3 +155,13 @@
   #certImage .ci-date { text-align: left; }
   #certImage.visible::after { display: none; }
 }
+
+#certImage .stamp-img {
+  position: absolute;
+  width: 180px;        /* Размер печати */
+  height: 180px;
+  transform: translate(-50%, -50%) rotate(-15deg); /* Центрирование по клику + лёгкий наклон */
+  pointer-events: none; /* Чтобы печать не мешала повторным кликам */
+  opacity: 0.85;       /* Лёгкая прозрачность для реалистичности */
+  z-index: 10;
+}
